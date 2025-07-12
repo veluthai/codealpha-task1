@@ -1,0 +1,310 @@
+#index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> Ali Raza Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Ali Raza <span>Store</span></a> 
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                    <li><a href="#" class="login-btn">Login</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <div class="nav-icon wishlist-icon">
+                        <i class="fas fa-heart"></i>
+                        <span class="icon-count">0</span>
+                    </div>
+                    <div class="nav-icon cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="icon-count">0</span>
+                    </div>
+                    <div class="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+        <div class="auth-modal">
+            <div class="auth-container">
+                <i class="fas fa-times close-auth"></i>
+                <div class="auth-tabs">
+                    <div class="auth-tab active" data-tab="login">Login</div>
+                    <div class="auth-tab" data-tab="register">Register</div>
+                </div>
+
+                <form class="auth-form active" id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="auth-switch">
+                        Don't have an account? <a href="#" class="switch-to-register">Register</a>
+                    </div>
+                </form>
+
+                <form class="auth-form" id="register-form">
+                    <div class="form-group">
+                        <label for="register-name">Full Name</label>
+                        <input type="text" id="register-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm">Confirm Pasword</label>
+                        <input type="password" id="register-confirm" required>
+                    </div>
+                    
+                    <button type="submit" class="btn" >Register</button>
+                    <div class="auth-switch">
+                        Already have an account? <a href="#" class="switch-to-login">Login</a>
+                    </div>
+                </form>
+                
+                
+            </div>
+        </div>
+        <section id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Summer <span class="text-primary">Collection</span></h1>
+                    <p>Discover our latest products with exclusive discounts. Quality products for your everyday needs.</p>
+                    <div class="hero-btns">
+                        <a href="#products" class="btn">Shop Now</a>
+
+                    </div>
+                </div>
+                <img src="C:\Users\VELUTHAI\Pictures\photos\Screenshots\Screenshot 2025-06-19 121144.png" alt="">
+            </div>
+        </section>
+
+        <section id="products" class="section">
+            <div class="container">
+                <h2 class="section-title">Our Products</h2>
+                <div class="products-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="electronics">Electronics</button>
+                    <button class="filter-btn" data-filter="clothing">clothing</button>
+                    <button class="filter-btn" data-filter="Home">Home</button>
+                    <button class="filter-btn" data-filter="accessories">accessories</button>
+                </div>
+                <div class="products-grid" id="products-grid">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get the latest updates on new product and upcoming sales</p>
+                    <form class="newletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+
+
+         <footer>
+            <div class="container">
+                <div class="footer-control">
+                    <div class="footer-content">
+                        <div class="footer-col">
+                            <h3>Shop Now</h3>
+                            <p>Quality products for your everyday needs.  Fast delivery and excellent customer service.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://wa.me/923284034512" targets="_blank"><i class="fab fa-whatsapp"></i></a>
+                                
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <h3>Quick Links</h3>
+                            <ul class="footer-links">
+                                <li><a href="#hero">Home</a></li>
+                                <li><a href="#products">Products</a></li>
+                                <li><a href="#newsletter">Newsletter</a></li>
+                                <li><a href="#">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h3>Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="#" data-filter="electronics">Electronics</a></li>
+                                <li><a href="#" data-filter="clothing">Clothing</a></li>
+                                <li><a href="#" data-filter="home">Home</a></li>
+                                <li><a href="#" data-filter="accessories">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h3>Contact Info</h3>
+                            <ul class="footer-links">
+                                <li><i class="fas fa-map-marker-alt"></i>123 Street,City,Country</li>
+                                <li><i class="fas fa-phone"></i>+9212346488</li>
+                                <li><i class="fas fa-envelope"></i>info@alirazastore.com</li>
+                                <li>
+                                    <a href="https://wa.me/923284034512" class="whatsapp-link" target="_blank">
+                                        <i class="fab fa-whatsapp"> </i>+923284034512
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Ali Raza Store. All Rights Reserved. </p>
+                </div>
+
+
+
+            </div>
+         </footer>
+         
+
+</body>
+</html>
+
+
+#style.css
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.board {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.column {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  width: 30%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.column h2 {
+  color: #444;
+}
+
+.task {
+  background: #e0e0e0;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0b7dda;
+}
+#script.js
+
+document.addEventListener('DOMContentLoaded', loadTasks);
+
+function addTask(columnId) {
+  const taskText = prompt("Enter task:");
+  if (!taskText) return;
+
+  const task = createTaskElement(taskText);
+  document.querySelector(`#${columnId} .task-list`).appendChild(task);
+  saveTasks();
+}
+
+function createTaskElement(text) {
+  const div = document.createElement('div');
+  div.className = 'task';
+  div.textContent = text;
+
+  div.draggable = true;
+  div.addEventListener('dragstart', (e) => {
+    e.dataTransfer.setData('text/plain', text);
+    div.classList.add('dragging');
+  });
+
+  div.addEventListener('dragend', () => {
+    div.classList.remove('dragging');
+    saveTasks();
+  });
+
+  return div;
+}
+
+document.querySelectorAll('.task-list').forEach(list => {
+  list.addEventListener('dragover', (e) => e.preventDefault());
+
+  list.addEventListener('drop', function (e) {
+    e.preventDefault();
+    const data = e.dataTransfer.getData('text/plain');
+    const task = createTaskElement(data);
+    this.appendChild(task);
+  });
+});
+
+function saveTasks() {
+  const board = {};
+  document.querySelectorAll('.column').forEach(col => {
+    const id = col.id;
+    const tasks = Array.from(col.querySelectorAll('.task')).map(task => task.textContent);
+    board[id] = tasks;
+  });
+  localStorage.setItem('taskBoard', JSON.stringify(board));
+}
+
+function loadTasks() {
+  const saved = JSON.parse(localStorage.getItem('taskBoard') || '{}');
+  for (let col in saved) {
+    saved[col].forEach(taskText => {
+      const task = createTaskElement(taskText);
+      document.querySelector(`#${col} .task-list`).appendChild(task);
+    });
+  }
+}
